@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:Century Gothic;  
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("background.jpg");
+	height: 120vh;
+	background-size:cover;
+	background-position: center;
+	overflow: auto;
+}
+.top{
+	position: absolute;
+	top : 10%;
+	left: 30%;
+	margin: auto;
+}
+.top h1{
+	text-align: center;
+	font-size: 80;
+	color: white;
+}
+.left{
+	position: absolute;
+	top :30%;
+	left: 5%;
+	border-radius: 25px;
+	box-shadow: 20px 20px 50px black;
+	padding: 65px 40px;
+	margin: auto;
+	background-color: #2cbce8;
+}
+.right{
+	position: absolute;
+	top :30%;
+	right: 5%;
+	border-radius: 25px;
+	box-shadow: 20px 20px 50px black;
+	padding: 65px 40px;
+	margin: auto;
+	background-color: #2cbce8;
+}
+.left ul h1{
+	color: black;
+	text-shadow: 1px 1px #6B8E23;
+	font-size: 25;
+	text-align: top;
+	padding-top: 0.5px;
+	padding-bottom: 15px;
+}
+.right ul h1{
+	color: black;
+	text-shadow: 1px 1px #6B8E23;
+	font-size: 25;
+	text-align: top;
+	padding-top: 0.5px;
+	padding-bottom: 15px;
+}
+
+.left ul li{
+	text-decoration: bold ;
+	color: white;
+	font-size: 20;
+	padding-top: 5px;
+	font-weight: 900;
+}
+.right ul li{
+	text-decoration: bold;
+	color: white;
+	font-size: 20;
+	padding-top: 5px;
+	font-weight: 900;
+}
+.new{
+	position: center;
+	padding-top: 300px;
+	margin: auto;
+}
+.new h1{
+	text-align: center;
+	font-size: 50;
+	color: white;
+}

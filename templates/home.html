@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Recommendation</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+	<header>
+		<div class="title">
+			<h1>Movie Recommender</h1>
+			<form action="{{url_for('recommend')}}" method="post">
+  				<input type="text" name="fname" required>
+  				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="card">
+			<p>This project development was contributed by<br> -Sarveswara Rao Kanduri<br> -Maneesha Bekal<br> -Nidhi Upadhya<br> -Samruddhi Pai<br> -S Mallik Nayak<br>
+			click the link bekow to access the source codes</p>
+			<a href="https://github.com/malliknayak/Movie-Recommendation-System">Github</a>			
+		</div>
+		<div class="wrapper">
+			<div class="card1"></div>
+			<div class="card2"></div>
+			<div class="card3"></div>
+		</div>
+	</header>
+
+</body>
+</html>
+

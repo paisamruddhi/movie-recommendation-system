@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0; 
+	font-family:Century Gothic; 
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("background1.jpg");
+	height: 120vh;
+	background-size:cover;
+	background-position: center;
+}
+
+.title{
+	position: absolute;
+	top:50px;
+	left:10%;
+}
+.title h1{
+	color: #fff;
+	font-size: 40;
+}
+.title form{
+	padding-top: 15px;
+	font-size: 25;
+	color:#fff;
+}
+.title form input[type=text]{
+	text-shadow: 1px 1px 2px;
+	position: bottom;
+	padding-top: 15px;
+	padding: 8px 250px;
+}
+.title form input[type=submit]{
+	text-decoration: none;
+	color: #000;
+	padding-bottom: 10px;
+	padding: 10px 20px;
+	border: 1px solid;
+}
+.title form input[type=submit]:hover{
+	background-color:#2cbce8;
+	color: #000;
+	transition: 0.6s ease;
+}
+
+.card{
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	height: 210px;
+	width:400px;
+	top:600px;
+	left:10%;
+}
+.card p{
+	font-size: 8;
+	padding-bottom: 5px;
+	margin-left: 10px;
+	color: white;
+	
+}
+.card a{
+	text-decoration: none;
+	color: white;
+	margin-top: 15px;
+	margin-left: 30px;
+	padding: 5px 8px;
+	border: 0.5px solid;
+}
+.card a:hover{
+	background-color:#2cbce8;
+	color: #000;
+	transition: 0.6s ease;
+}
+
+.wrapper{
+	position: absolute;
+	top: 250px;
+	left: 80px;
+	width: 1000px;
+	height:400px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+.card1, .card2, .card3{
+	float: left;
+	border-radius: 15px;
+	box-shadow: 15px 15px 25px black;
+	height: 300px;
+	width : 200px;
+	margin-left: 80px;
+	transition: 5s;
+	animation-direction:alternate-reverse; ;
+	animation-duration: 25s ;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite; ;
+	animation-play-state: running;
+	animation-timing-function: 0.6s ease-in-out;
+}
+.card1{
+	background-image: url("superman.jpg");
+	background-size: cover;
+	animation-name: anima;
+
+
+}
+@keyframes anima{
+	0%{
+		background-image: url("batman.jpg")
+	}
+	25%{
+		background-image: url("ironman.jpg")
+	}
+	50%{
+		background-image: url("tron.jpg")
+	}
+	75%{
+		background-image: url("hulk.jpg")
+	}
+	100%{
+		background-image: url("superman.jpg")
+	}
+}
+.card2{
+	background: url("evildead.jpg");
+	background-size: cover;
+	animation-name: animb;
+}
+@keyframes animb{
+	0%{
+		background-image: url("insidious.jpg")
+	}
+	25%{
+		background-image: url("conjuring.jpg")
+	}
+	50%{
+		background-image: url("relic.jpg")
+	}
+	75%{
+		background-image: url("lastexorcism.jpg")
+	}
+	100%{
+		background-image: url("evildead.jpg")
+	}
+}
+.card3{
+	background-image: url("interstellar.jpg");
+	background-size: cover;
+	animation-name: animc;
+}
+@keyframes animc{
+	0%{
+		background-image: url("gravity.jpg")
+	}
+	25%{
+		background-image: url("contagion.jpg")
+	}
+	50%{
+		background-image: url("transcendence.jpg")
+	}
+	75%{
+		background-image: url("martian.jpg")
+	}
+	100%{
+		background-image: url("interstellar.jpg")
+	}
+}

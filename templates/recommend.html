@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RECOMMENDED MOVIES</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style2.css')}}">
+</head>
+<body>
+	<header>
+		<script>
+			var data1={data1}
+			var data2={data2}
+			var name={name}
+			var t={t}
+		</script>
+		{% block content %}
+		{% if (t=='true') %}
+			<div class="top">
+				<h1>Recommended movies for ' {{name}} '</h1>
+			</div>
+			<div class="left">
+				<ul>
+					<h1>Movies based on genres</h1>
+					{% for item in data1 %}
+					<li>{{item}}</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="right">
+				<ul>
+					<h1>Movies based on ratings</h1>
+					{% for item in data2 %}
+					<li>{{item}}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		{% else %}
+			<div class="new">
+				<h1>OOPS... ' {{name}} ' Not Found. Please try with a different name</h1>
+			</div>
+		{% endif %}	
+		{% endblock %}
+	</header>
+</body>
+</html>
